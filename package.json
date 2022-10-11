@@ -1,0 +1,11 @@
+{
+  "name": "foodiopc",
+  "version": "1.0.0",
+  "description": "restaurant",
+  "main": "index.js",
+  "scripts": {
+    "sass --watch ./sass/main.scss:./public/css/style.css"
+  },
+  "author": "Romain",
+  "license": "ISC"
+}
