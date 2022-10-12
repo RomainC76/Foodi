@@ -4,7 +4,7 @@
   "description": "restaurant",
   "main": "index.js",
   "scripts": {
-    "sass --watch ./sass/main.scss:./public/css/style.css"
+    "sass":"sass --watch ./sass/main.scss:./public/css/style.css"
   },
   "author": "Romain",
   "license": "ISC"
