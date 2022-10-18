@@ -3,3 +3,262 @@
 @import "./Utils/mixins";
 @import "./Utils/extensions";
 @import "./Layout/form";
+
+* {
+    box-sizing: border-box;
+}
+
+/*Page d'acceuil*/
+h1,
+h2,
+h3 {
+    font-size: 30px;
+    font-family: "shrikhand";
+}
+
+p {
+    font-family: "Roboto", sans-serif;
+}
+
+body {
+    margin: 0;
+}
+
+main {
+    display: block;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80px;
+    box-shadow: 5px 5px 10px #f2f2f2;
+}
+
+.localisation {
+    width: 100%;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    justify-content: center;
+    background-color: $couleur-grisfonce;
+    margin: 0;
+    box-shadow: inset 0px 0px 10px 1px gray;
+    font-weight: bold;
+}
+
+.navs {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: $couleur-grisclaire;
+    padding: 30px;
+    text-align: center;
+
+    p {
+        font-size: 20px;
+        color: gray;
+    }
+
+    button {
+        border-radius: 100px;
+        border: transparent;
+        padding: 20px 30px;
+        background: linear-gradient(to bottom, #FF79DA, #9356DC);
+        color: #FFFFFF;
+        font-size: 16px;
+        width: auto;
+        justify-content: center;
+        box-shadow: 0px 0px 15px gray;
+        cursor: pointer;
+    }
+}
+
+.fonctionnement {
+    display: flex;
+    flex-direction: column;
+    align-content: flex-start;
+    padding-left: 20px;
+
+    ul {
+        gap: 10px;
+        padding: 0;
+    }
+
+    li {
+        padding: 20px 30px 20px 0px;
+        background-color: $couleur-grisclaire;
+        border: solid 2px transparent;
+        border-radius: 15px 15px 15px 15px;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 30px;
+        margin-bottom: 20px;
+        color: black;
+        font-weight: bold;
+        font-size: large;
+        font-family: "Roboto", sans-serif;
+        box-shadow: 0px 0px 15px #f2f2f2;
+        cursor: pointer;
+
+        i {
+            color: gray;
+        }
+    }
+}
+
+.round_number {
+    margin-left: -10px;
+    background: $couleur-primaire;
+    color: #FFFFFF;
+    border-radius: 100px;
+    padding: 3px 8px;
+    font-weight: 100;
+}
+
+.restaurants {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    background-color: $couleur-grisclaire;
+    padding: 10px;
+}
+
+.cardr {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+}
+
+.cardr figure {
+    width: 100%;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 20px 20px 20px 20px;
+    text-decoration: none;
+    background-color: white;
+
+    a {
+        width: 100%;
+    }
+
+    img {
+        width: 100%;
+        height: 200px;
+        border-radius: 20px 20px 0px 0px;
+        object-fit: cover;
+    }
+
+    figcaption {
+        width: 100%;
+        padding: 10px;
+
+        h3,
+        p {
+            margin: 5px;
+        }
+
+    }
+}
+
+footer {
+    background-color: #353535;
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    height: auto;
+    color: white;
+    padding: 10px;
+
+    h3 {
+        margin: 10px;
+    }
+
+    ul {
+        list-style-type: none;
+        padding-left: 10px;
+    }
+
+    li {
+        padding: 5px;
+        text-align: left;
+    }
+
+}
+
+.proposer i {
+    margin-right: 10px;
+}
+
+.partenaire i {
+    margin-right: 5px;
+}
+
+/*Page La palette du gout*/
+.retour_accueil {
+    color: black;
+    margin-right: 0px;
+    width: 30px;
+    height: auto;
+}
+
+.fondpalette {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+button {
+    border-radius: 100px;
+    border: transparent;
+    padding: 20px 30px;
+    background: linear-gradient(to bottom, #FF79DA, #9356DC);
+    color: #FFFFFF;
+    font-size: 16px;
+    width: 80%;
+    box-shadow: 0px 0px 15px gray;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.menu {
+    display: flex;
+    flex-direction: column;
+    padding: 10px 30px;
+    background-color: $couleur-grisclaire;
+    border-radius: 40px 40px 0px 0px;
+    font-size: smaller;
+
+}
+
+.entree {
+    width: 100%;
+    height: auto;
+}
+
+.entree_1 {
+    padding: 20px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    border-radius: 40px 40px 40px 40px;
+    white-space: nowrap;
+
+    h3 {
+        width: 100%;
+        margin: 0;
+    }
+
+    p {
+        width: 40%;
+        white-space: nowrap;
+    }
+}
