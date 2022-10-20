@@ -132,6 +132,21 @@ header {
   height: 100%;
   align-items: center;
 }
+.cardr .fas {
+  position: absolute;
+  right: 80px;
+  color: transparent;
+}
+.cardr .fas:hover {
+  color: #9356DC;
+}
+.cardr .far {
+  position: absolute;
+  right: 80px;
+}
+.cardr .far:hover {
+  color: transparent;
+}
 
 .cardr figure {
   width: 100%;
@@ -156,8 +171,8 @@ header {
   width: 100%;
   padding: 10px;
 }
-.cardr figure figcaption h3,
-.cardr figure figcaption p {
+.cardr figure figcaption p,
+.cardr figure figcaption h3 {
   margin: 5px;
 }
 
