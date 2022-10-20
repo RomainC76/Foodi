@@ -7,8 +7,9 @@
 h1,
 h2,
 h3 {
-  font-size: 30px;
-  font-family: "shrikhand";
+  font-size: 26px;
+  font-family: "shrikhand" sans-serif;
+  font-weight: bolder;
 }
 
 body {
@@ -24,7 +25,6 @@ header {
   justify-content: center;
   align-items: center;
   height: 80px;
-  box-shadow: 5px 5px 10px #f2f2f2;
 }
 
 .localisation {
@@ -36,8 +36,8 @@ header {
   justify-content: center;
   background-color: #EAEAEA;
   margin: 0;
-  box-shadow: inset 0px 0px 10px 1px gray;
   font-weight: bold;
+  box-shadow: 0px 10px 10px -10px gray inset;
 }
 
 .navs {
@@ -50,7 +50,7 @@ header {
   text-align: center;
 }
 .navs p {
-  font-size: 20px;
+  font-size: 22px;
   color: gray;
 }
 .navs button {
@@ -74,6 +74,7 @@ header {
   flex-direction: column;
   align-content: flex-start;
   padding-left: 20px;
+  margin-bottom: 60px;
 }
 .fonctionnement ul {
   display: flex;
@@ -132,6 +133,14 @@ header {
   height: 100%;
   align-items: center;
 }
+.cardr .etiquette_nouveau {
+  position: absolute;
+  right: 25px;
+  color: green;
+  border: 2px transparent;
+  padding: 5px;
+  background-color: greenyellow;
+}
 .cardr .fas {
   position: absolute;
   right: 80px;
@@ -171,9 +180,12 @@ header {
   width: 100%;
   padding: 10px;
 }
-.cardr figure figcaption p,
 .cardr figure figcaption h3 {
   margin: 5px;
+}
+.cardr figure figcaption p {
+  margin: 5px;
+  font-size: 22px;
 }
 
 footer {
