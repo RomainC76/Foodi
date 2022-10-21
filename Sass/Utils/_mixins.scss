@@ -5,3 +5,10 @@
 @mixin btn_gradient {
     background: linear-gradient(to bottom, #FF79DA, #9356DC);
 }
+
+@mixin display_sous_menu {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+}
