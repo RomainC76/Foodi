@@ -30,14 +30,16 @@
         font-size: xx-large;
         font-family: "shrikhand";
     }
+
+    .fa-utensils {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 40px;
+    }
 }
 
-.fa-utensils {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 40px;
-}
+
 
 .spin {
     background-color: $couleur-secondaire;
@@ -79,7 +81,6 @@ h1,
 h2,
 h3 {
     font-size: 26px;
-    font-family: "shrikhand";
     font-weight: bolder;
 }
 
@@ -172,12 +173,12 @@ header {
             background-color: lighten($color: $couleur-primaire, $amount: 35);
         }
 
+        &:hover i {
+            color: $couleur-primaire;
+        }
+
         i {
             color: gray;
-
-            &:hover {
-                color: $couleur-primaire;
-            }
         }
     }
 }
@@ -309,6 +310,7 @@ footer {
 
     h3 {
         margin: 10px;
+        font-family: "shrikhand";
     }
 
     ul {
@@ -319,6 +321,10 @@ footer {
     li {
         padding: 5px;
         text-align: left;
+    }
+
+    .fa-utensils {
+        margin-right: 0px;
     }
 
 }
