@@ -281,6 +281,11 @@ footer li {
 footer .fa-utensils {
   margin-right: 0px;
 }
+footer a {
+  text-decoration: none;
+  color: white;
+  cursor: pointer;
+}
 
 .proposer i {
   margin-right: 10px;
@@ -390,11 +395,12 @@ button:hover {
 
 .entree_1 {
   padding: 10px;
+  padding-right: 0;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  justify-content: space-between;
   max-width: 100%;
   height: 70px;
+  overflow: hidden;
   border-radius: 15px;
   background-color: #fff;
   box-shadow: 5px 5px 10px rgba(32, 24, 24, 0.29);
@@ -403,6 +409,9 @@ button:hover {
 }
 .entree_1 p {
   font-size: 14px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }
 .entree_1 h3 {
   font-size: 18px;
@@ -412,21 +421,35 @@ button:hover {
   white-space: nowrap;
   text-overflow: ellipsis;
 }
-
-.sous_texte {
-  width: 100%;
-  height: 26px;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
-  padding-right: 20px;
+.entree_1 .sous_texte {
   white-space: nowrap;
-}
-.sous_texte .nom_plat {
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
+}
+.entree_1 .prix {
+  display: flex;
+  align-items: center;
+  gap: 35px;
+  margin-right: -70px;
+  transition: all 1s ease-in-out;
+}
+.entree_1 .prix:hover {
+  margin-right: 0px;
+}
+.entree_1 .prix:hover .fa-circle-check {
+  rotate: 360deg;
+  transition: 1s;
+}
+.entree_1 .prix .check {
+  width: 60px;
+  height: 70px;
+  border: solid transparent;
+  border-radius: 0px 15px 15px 0px;
+  padding: 0 19px;
+  background-color: #99E2D0;
+  display: flex;
+  align-items: center;
 }
 
 /*# sourceMappingURL=style.css.map */

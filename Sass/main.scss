@@ -39,8 +39,6 @@
     }
 }
 
-
-
 .spin {
     background-color: $couleur-secondaire;
     position: absolute;
@@ -327,6 +325,12 @@ footer {
         margin-right: 0px;
     }
 
+    a {
+        text-decoration: none;
+        color: white;
+        cursor: pointer;
+    }
+
 }
 
 .proposer i {
@@ -420,7 +424,6 @@ button {
 .entree {
     @include display_sous_menu;
     animation: defilement 3s;
-
 }
 
 .plats {
@@ -440,11 +443,12 @@ button {
 
 .entree_1 {
     padding: 10px;
+    padding-right: 0;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
     max-width: 100%;
     height: 70px;
+    overflow: hidden;
     border-radius: 15px;
     background-color: #fff;
     box-shadow: 5px 5px 10px rgb(32 24 24 / 29%);
@@ -453,6 +457,9 @@ button {
 
     p {
         font-size: 14px;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
     }
 
     h3 {
@@ -463,21 +470,41 @@ button {
         white-space: nowrap;
         text-overflow: ellipsis
     }
-}
 
-.sous_texte {
-    width: 100%;
-    height: 26px;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    padding-right: 20px;
-    white-space: nowrap;
+    .sous_texte {
 
-    .nom_plat {
+        white-space: nowrap;
         overflow: hidden;
         white-space: nowrap;
         text-overflow: ellipsis;
+    }
+
+    .prix {
+        display: flex;
+        align-items: center;
+        gap: 35px;
+        margin-right: -70px;
+        transition: all 1s ease-in-out;
+
+        &:hover {
+            margin-right: 0px;
+
+            .fa-circle-check {
+                rotate: 360deg;
+                transition: 1s;
+            }
+        }
+
+        .check {
+            width: 60px;
+            height: 70px;
+            border: solid transparent;
+            border-radius: 0px 15px 15px 0px;
+            padding: 0 19px;
+            background-color: #99E2D0;
+            display: flex;
+            align-items: center;
+
+        }
     }
 }
