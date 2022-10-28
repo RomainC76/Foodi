@@ -64,10 +64,14 @@
 }
 /*Page d'acceuil*/
 h1,
-h2,
+h2 {
+  font-size: 26px;
+  font-family: "shrikhand", sans-serif;
+  font-weight: lighter;
+}
+
 h3 {
   font-size: 26px;
-  font-weight: bolder;
 }
 
 body {
@@ -190,7 +194,7 @@ header {
   color: green;
   border: 2px transparent;
   padding: 5px;
-  background-color: #99e2d0;
+  background-color: #99E2D0;
 }
 .cardr .fas {
   position: absolute;
@@ -353,7 +357,7 @@ button:hover {
 
 .trait_vert {
   width: 40px;
-  border-bottom: 3px solid #99e2d0;
+  border-bottom: 3px solid #99E2D0;
   margin-bottom: 10px;
 }
 

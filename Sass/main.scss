@@ -76,10 +76,14 @@
 
 /*Page d'acceuil*/
 h1,
-h2,
+h2 {
+    font-size: 26px;
+    font-family: "shrikhand", sans-serif;
+    font-weight: lighter;
+}
+
 h3 {
     font-size: 26px;
-    font-weight: bolder;
 }
 
 body {
@@ -213,7 +217,7 @@ header {
         color: green;
         border: 2px transparent;
         padding: 5px;
-        background-color: #99e2d0;
+        background-color: $couleur-tertiraire;
     }
 
     .fas {
@@ -407,7 +411,7 @@ button {
 .trait_vert {
 
     width: 40px;
-    border-bottom: 3px solid #99e2d0;
+    border-bottom: 3px solid $couleur-tertiraire;
     margin-bottom: 10px;
 }
 
