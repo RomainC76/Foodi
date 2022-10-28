@@ -338,7 +338,7 @@ footer {
 }
 
 .proposer i {
-    margin-right: 10px;
+    margin-right: 6px;
 }
 
 .partenaire i {
@@ -460,16 +460,19 @@ button {
     cursor: pointer;
 
     p {
-        font-size: 14px;
+        font-size: 20px;
+        margin-top: 4px;
+        margin-bottom: 2px;
         overflow: hidden;
         white-space: nowrap;
         text-overflow: ellipsis;
     }
 
     h3 {
-        font-size: 18px;
+        font-size: 20px;
         width: 100%;
         margin: 0;
+        font-weight: bolder;
         overflow: hidden;
         white-space: nowrap;
         text-overflow: ellipsis
@@ -495,7 +498,9 @@ button {
 
             .fa-circle-check {
                 rotate: 360deg;
-                transition: 1s;
+                transition-property: all;
+                transition-duration: 1s;
+                transition-delay: 0.5s;
             }
         }
 

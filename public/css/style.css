@@ -292,7 +292,7 @@ footer a {
 }
 
 .proposer i {
-  margin-right: 10px;
+  margin-right: 6px;
 }
 
 .partenaire i {
@@ -412,15 +412,18 @@ button:hover {
   cursor: pointer;
 }
 .entree_1 p {
-  font-size: 14px;
+  font-size: 20px;
+  margin-top: 4px;
+  margin-bottom: 2px;
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
 }
 .entree_1 h3 {
-  font-size: 18px;
+  font-size: 20px;
   width: 100%;
   margin: 0;
+  font-weight: bolder;
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
@@ -443,7 +446,9 @@ button:hover {
 }
 .entree_1 .prix:hover .fa-circle-check {
   rotate: 360deg;
-  transition: 1s;
+  transition-property: all;
+  transition-duration: 1s;
+  transition-delay: 0.5s;
 }
 .entree_1 .prix .check {
   width: 60px;
