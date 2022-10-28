@@ -76,6 +76,7 @@ h3 {
 
 body {
   margin: 0;
+  max-width: 825px;
 }
 
 main {
@@ -194,7 +195,8 @@ header {
   height: 100%;
   align-items: center;
 }
-.cardr .etiquette_nouveau {
+.cardr .etiquette_nouveau_1,
+.cardr .etiquette_nouveau_2 {
   position: absolute;
   margin-top: 20px;
   right: 25px;
@@ -471,6 +473,54 @@ button:hover {
   background-color: #99E2D0;
   display: flex;
   align-items: center;
+}
+
+/* Mediaquery*/
+@media screen and (max-width: 992px) and (min-width: 825px) {
+  body {
+    max-width: 992px;
+  }
+  .cardr {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .cardr figure {
+    width: 40%;
+  }
+  .cardr .etiquette_nouveau_1 {
+    right: 57%;
+  }
+  .cardr .etiquette_nouveau_2 {
+    right: 95px;
+  }
+  footer {
+    align-items: center;
+  }
+}
+@media screen and (min-width: 993px) {
+  body {
+    max-width: 1400px;
+    margin: auto;
+  }
+  .fonctionnement {
+    margin-bottom: 65px;
+  }
+  .fonctionnement ul {
+    flex-direction: row;
+  }
+  .cardr {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .cardr figure {
+    width: 40%;
+  }
+  .cardr .etiquette_nouveau_1 {
+    right: 57%;
+  }
+  .cardr .etiquette_nouveau_2 {
+    right: 23%;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
