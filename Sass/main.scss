@@ -92,7 +92,7 @@ body {
 
 main {
     display: block;
-    max-width: 820px;
+    max-width: 840px;
 }
 
 .corps_page {
@@ -536,7 +536,7 @@ button {
 
 /* Mediaquery*/
 
-@media screen and (max-width: 892px) and (min-width: 820px) {
+@media screen and (max-width: 892px) and (min-width: 841px) {
     main {
         max-width: 892px;
     }
