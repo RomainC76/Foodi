@@ -76,11 +76,11 @@ h3 {
 
 body {
   margin: 0;
-  max-width: 820px;
 }
 
 main {
   display: block;
+  max-width: 820px;
 }
 
 .corps_page {
@@ -477,7 +477,7 @@ button:hover {
 
 /* Mediaquery*/
 @media screen and (max-width: 892px) and (min-width: 820px) {
-  body {
+  main {
     max-width: 892px;
   }
   .navs button {
@@ -507,7 +507,7 @@ button:hover {
   }
 }
 @media screen and (min-width: 893px) {
-  body {
+  main {
     max-width: 1400px;
     margin: auto;
   }
