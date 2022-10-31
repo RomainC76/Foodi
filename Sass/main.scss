@@ -88,7 +88,7 @@ h3 {
 
 body {
     margin: 0;
-    max-width: 825px;
+    max-width: 820px;
 }
 
 main {
@@ -136,6 +136,7 @@ header {
 
     button {
         justify-content: center;
+        width: 100%;
 
     }
 
@@ -210,51 +211,50 @@ header {
     background-color: $couleur-grisclaire;
     padding: 10px;
 
-}
+    .cardr {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+        align-items: center;
 
-.cardr {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    height: 100%;
-    align-items: center;
+        .etiquette_nouveau_1,
+        .etiquette_nouveau_2 {
+            position: absolute;
+            margin-top: 5%;
+            right: 5%;
+            color: green;
+            border: 2px transparent;
+            padding: 5px;
+            background-color: $couleur-tertiraire;
+        }
 
-    .etiquette_nouveau_1,
-    .etiquette_nouveau_2 {
-        position: absolute;
-        margin-top: 20px;
-        right: 25px;
-        color: green;
-        border: 2px transparent;
-        padding: 5px;
-        background-color: $couleur-tertiraire;
-    }
+        .fas {
+            position: absolute;
+            right: 80px;
+            opacity: 0%;
+            @include btn_gradient;
+            background-clip: border-box;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
 
-    .fas {
-        position: absolute;
-        right: 80px;
-        opacity: 0%;
-        @include btn_gradient;
-        background-clip: border-box;
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
+            &:hover {
+                opacity: 100%;
+                animation: slideup 3s;
 
-        &:hover {
-            opacity: 100%;
-            animation: slideup 3s;
+            }
 
         }
 
-    }
+        .far {
+            position: absolute;
+            right: 80px;
+            -webkit-text-fill-color: black;
+            opacity: 100%;
 
-    .far {
-        position: absolute;
-        right: 80px;
-        -webkit-text-fill-color: black;
-        opacity: 100%;
-
-        &:hover {
-            opacity: 0%;
+            &:hover {
+                opacity: 0%;
+            }
         }
     }
 }
@@ -536,37 +536,58 @@ button {
 
 /* Mediaquery*/
 
-@media screen and (max-width: 992px) and (min-width: 825px) {
+@media screen and (max-width: 892px) and (min-width: 820px) {
     body {
-        max-width: 992px;
+        max-width: 892px;
     }
 
-    .cardr {
-        flex-direction: row;
-        flex-wrap: wrap;
+    .navs button {
+        width: 40%;
+    }
 
-        figure {
-            width: 40%;
-        }
+    .restaurants {
+        .cardr {
+            flex-direction: row;
+            flex-wrap: wrap;
 
-        .etiquette_nouveau_1 {
-            right: 57%;
-        }
+            figure {
+                width: 40%;
 
-        .etiquette_nouveau_2 {
-            right: 95px;
+                .etiquette_nouveau_1 {
+                    margin-top: 3%;
+                    right: 57%;
+                }
+
+                .etiquette_nouveau_2 {
+                    margin-top: 3%;
+                    right: 9%;
+                }
+            }
         }
     }
 
     footer {
         align-items: center;
+
+        ul {
+            display: flex;
+            gap: 50px;
+        }
     }
 }
 
-@media screen and (min-width: 993px) {
+@media screen and (min-width: 893px) {
     body {
         max-width: 1400px;
         margin: auto;
+    }
+
+    .navs button {
+        width: 40%;
+    }
+
+    .menu button {
+        width: 30%;
     }
 
     .fonctionnement {
@@ -577,21 +598,27 @@ button {
         }
     }
 
-    .cardr {
-        flex-direction: row;
-        flex-wrap: wrap;
+    .restaurants {
+        display: block;
 
-        figure {
-            width: 40%;
-        }
+        .cardr {
+            flex-direction: row;
+            flex-wrap: wrap;
 
-        .etiquette_nouveau_1 {
-            right: 57%;
-        }
+            figure {
+                width: 40%;
 
-        .etiquette_nouveau_2 {
-            right: 23%;
+                .etiquette_nouveau_1 {
+                    margin-top: 2%;
+                    right: 55%;
+                    margin-right: 1%;
+                }
+
+                .etiquette_nouveau_2 {
+                    margin-top: 3%;
+                    margin-right: 8%;
+                }
+            }
         }
     }
-
 }
