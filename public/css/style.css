@@ -489,10 +489,14 @@ button:hover {
   }
   .restaurants .cardr figure {
     width: 40%;
+    position: relative;
   }
   .restaurants .cardr figure .etiquette_nouveau_1 {
     margin-top: 3%;
     right: 57%;
+  }
+  .restaurants .cardr figure figcaption {
+    position: relative;
   }
   .restaurants .cardr figure .etiquette_nouveau_2 {
     margin-top: 3%;
@@ -532,11 +536,15 @@ button:hover {
   }
   .restaurants .cardr figure {
     width: 40%;
+    position: relative;
   }
   .restaurants .cardr figure .etiquette_nouveau_1 {
     margin-top: 2%;
     right: 55%;
     margin-right: 1%;
+  }
+  .restaurants .cardr figure figcaption {
+    position: relative;
   }
   .restaurants .cardr figure .etiquette_nouveau_2 {
     margin-top: 3%;

@@ -552,10 +552,15 @@ button {
 
             figure {
                 width: 40%;
+                position: relative;
 
                 .etiquette_nouveau_1 {
                     margin-top: 3%;
                     right: 57%;
+                }
+
+                figcaption {
+                    position: relative;
                 }
 
                 .etiquette_nouveau_2 {
@@ -607,11 +612,16 @@ button {
 
             figure {
                 width: 40%;
+                position: relative;
 
                 .etiquette_nouveau_1 {
                     margin-top: 2%;
                     right: 55%;
                     margin-right: 1%;
+                }
+
+                figcaption {
+                    position: relative;
                 }
 
                 .etiquette_nouveau_2 {
