@@ -159,7 +159,7 @@ header {
   color: black;
   font-weight: bold;
   font-size: large;
-  box-shadow: 5px 5px 10px rgba(32, 24, 24, 0.29);
+  box-shadow: 5px 5px 10px #C0C0C0;
   cursor: pointer;
 }
 .fonctionnement li:hover {
@@ -247,7 +247,7 @@ header {
   border-radius: 20px 20px 20px 20px;
   text-decoration: none;
   background-color: white;
-  box-shadow: 5px 5px 10px rgba(32, 24, 24, 0.29);
+  box-shadow: 5px 5px 10px #C0C0C0;
 }
 .cardr figure a {
   width: 100%;
@@ -335,13 +335,13 @@ button {
   color: #FFFFFF;
   font-size: 16px;
   width: 80%;
-  box-shadow: 5px 5px 10px rgba(32, 24, 24, 0.29);
+  box-shadow: 5px 5px 10px #C0C0C0;
   cursor: pointer;
   margin-top: 20px;
 }
 button:hover {
   filter: brightness(1.1);
-  box-shadow: 5px 5px 10px rgba(32, 24, 24, 0.49);
+  box-shadow: 5px 5px 10px 2px #808080;
 }
 
 .menu {
