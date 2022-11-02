@@ -96,6 +96,16 @@
     }
 }
 
+@keyframes defilement {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
 /*Page d'acceuil*/
 h1 {
     font-size: 26px;
@@ -375,7 +385,7 @@ footer {
 
 .retour_accueil {
     color: black;
-    margin-right: 0px;
+    margin-right: 20px;
     width: 30px;
     height: auto;
 }
@@ -405,7 +415,6 @@ button {
 
     }
 }
-
 
 .menu {
     display: flex;
@@ -470,15 +479,6 @@ button {
     margin-bottom: 10px;
 }
 
-@keyframes defilement {
-    from {
-        opacity: 0;
-    }
-
-    to {
-        opacity: 1;
-    }
-}
 
 .entree {
     @include display_sous_menu;
@@ -514,6 +514,7 @@ button {
     margin-bottom: 20px;
     cursor: pointer;
 
+
     p {
         font-size: 18px;
         margin-top: 4px;
@@ -545,6 +546,18 @@ button {
         color: white;
     }
 
+    &:hover .prix {
+        margin-right: 0px;
+
+        .fa-circle-check {
+            rotate: 360deg;
+            transition-property: all;
+            transition-duration: 1s;
+            transition-delay: 0.5s;
+
+        }
+    }
+
     .prix {
         display: flex;
         align-items: center;
@@ -554,17 +567,6 @@ button {
 
         p {
             font-weight: 900;
-        }
-
-        &:hover {
-            margin-right: 0px;
-
-            .fa-circle-check {
-                rotate: 360deg;
-                transition-property: all;
-                transition-duration: 1s;
-                transition-delay: 0.5s;
-            }
         }
 
         .check {
@@ -664,6 +666,15 @@ button {
                     position: relative;
                 }
             }
+        }
+    }
+
+    footer {
+        align-items: center;
+
+        ul {
+            display: flex;
+            gap: 50px;
         }
     }
 }

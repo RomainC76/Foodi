@@ -80,6 +80,14 @@
     top: -47px;
   }
 }
+@keyframes defilement {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
 /*Page d'acceuil*/
 h1 {
   font-size: 26px;
@@ -324,7 +332,7 @@ footer a {
 /*Page*/
 .retour_accueil {
   color: black;
-  margin-right: 0px;
+  margin-right: 20px;
   width: 30px;
   height: auto;
 }
@@ -405,14 +413,6 @@ button:hover {
   margin-bottom: 10px;
 }
 
-@keyframes defilement {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
 .entree {
   display: flex;
   flex-direction: column;
@@ -481,6 +481,15 @@ button:hover {
 .entree_1 .fa-circle-check {
   color: white;
 }
+.entree_1:hover .prix {
+  margin-right: 0px;
+}
+.entree_1:hover .prix .fa-circle-check {
+  rotate: 360deg;
+  transition-property: all;
+  transition-duration: 1s;
+  transition-delay: 0.5s;
+}
 .entree_1 .prix {
   display: flex;
   align-items: center;
@@ -490,15 +499,6 @@ button:hover {
 }
 .entree_1 .prix p {
   font-weight: 900;
-}
-.entree_1 .prix:hover {
-  margin-right: 0px;
-}
-.entree_1 .prix:hover .fa-circle-check {
-  rotate: 360deg;
-  transition-property: all;
-  transition-duration: 1s;
-  transition-delay: 0.5s;
 }
 .entree_1 .prix .check {
   width: 60px;
@@ -575,6 +575,13 @@ button:hover {
   }
   .restaurants .cardr figure figcaption {
     position: relative;
+  }
+  footer {
+    align-items: center;
+  }
+  footer ul {
+    display: flex;
+    gap: 50px;
   }
 }
 
