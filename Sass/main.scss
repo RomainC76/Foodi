@@ -550,22 +550,18 @@ button {
             flex-direction: row;
             flex-wrap: wrap;
 
+            .far,
+            .fas {
+                right: 40px;
+            }
+
+
             figure {
                 width: 40%;
                 position: relative;
 
-                .etiquette_nouveau_1 {
-                    margin-top: 3%;
-                    right: 57%;
-                }
-
                 figcaption {
                     position: relative;
-                }
-
-                .etiquette_nouveau_2 {
-                    margin-top: 3%;
-                    right: 9%;
                 }
             }
         }
@@ -605,28 +601,20 @@ button {
 
     .restaurants {
         display: block;
+        border-radius: 20px 20px 20px 20px;
+        padding-left: 20px;
 
         .cardr {
             flex-direction: row;
             flex-wrap: wrap;
+            justify-content: center;
 
             figure {
                 width: 40%;
                 position: relative;
 
-                .etiquette_nouveau_1 {
-                    margin-top: 2%;
-                    right: 55%;
-                    margin-right: 1%;
-                }
-
                 figcaption {
                     position: relative;
-                }
-
-                .etiquette_nouveau_2 {
-                    margin-top: 3%;
-                    margin-right: 8%;
                 }
             }
         }

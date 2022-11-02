@@ -487,20 +487,16 @@ button:hover {
     flex-direction: row;
     flex-wrap: wrap;
   }
+  .restaurants .cardr .far,
+.restaurants .cardr .fas {
+    right: 40px;
+  }
   .restaurants .cardr figure {
     width: 40%;
     position: relative;
   }
-  .restaurants .cardr figure .etiquette_nouveau_1 {
-    margin-top: 3%;
-    right: 57%;
-  }
   .restaurants .cardr figure figcaption {
     position: relative;
-  }
-  .restaurants .cardr figure .etiquette_nouveau_2 {
-    margin-top: 3%;
-    right: 9%;
   }
   footer {
     align-items: center;
@@ -529,26 +525,20 @@ button:hover {
   }
   .restaurants {
     display: block;
+    border-radius: 20px 20px 20px 20px;
+    padding-left: 20px;
   }
   .restaurants .cardr {
     flex-direction: row;
     flex-wrap: wrap;
+    justify-content: center;
   }
   .restaurants .cardr figure {
     width: 40%;
     position: relative;
   }
-  .restaurants .cardr figure .etiquette_nouveau_1 {
-    margin-top: 2%;
-    right: 55%;
-    margin-right: 1%;
-  }
   .restaurants .cardr figure figcaption {
     position: relative;
-  }
-  .restaurants .cardr figure .etiquette_nouveau_2 {
-    margin-top: 3%;
-    margin-right: 8%;
   }
 }
 
