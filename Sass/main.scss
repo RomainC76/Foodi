@@ -74,6 +74,28 @@
     }
 }
 
+@keyframes slideup {
+    from {
+        transform: translate3d(10px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translate3d(0px);
+        opacity: 1;
+    }
+}
+
+@keyframes menu_up {
+    0% {
+        top: -37px;
+    }
+
+    100% {
+        top: -47px;
+    }
+}
+
 /*Page d'acceuil*/
 h1 {
     font-size: 26px;
@@ -259,17 +281,6 @@ header {
     }
 }
 
-@keyframes slideup {
-    from {
-        transform: translate3d(10px);
-        opacity: 0;
-    }
-
-    to {
-        transform: translate3d(0px);
-        opacity: 1;
-    }
-}
 
 .cardr figure {
     width: 100%;
@@ -395,6 +406,7 @@ button {
     }
 }
 
+
 .menu {
     display: flex;
     flex-direction: column;
@@ -402,8 +414,12 @@ button {
     background-color: $couleur-grisclaire;
     border-radius: 40px 40px 0px 0px;
     position: relative;
-    top: -36px;
+    top: -37px;
     align-items: center;
+    animation: menu_up 0.5s;
+    animation-delay: 3s;
+    animation-fill-mode: forwards;
+
 
     h1 {
         width: 100%;
@@ -430,7 +446,6 @@ button {
         &:hover {
             opacity: 100%;
             animation: slideup 3s;
-
         }
 
     }
