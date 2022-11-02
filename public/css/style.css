@@ -365,6 +365,28 @@ button:hover {
   font-size: 22px;
   margin-bottom: 0px;
 }
+.menu .fas {
+  position: absolute;
+  right: 80px;
+  opacity: 0%;
+  background: linear-gradient(to bottom, #FF79DA, #9356DC);
+  background-clip: border-box;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.menu .fas:hover {
+  opacity: 100%;
+  animation: slideup 3s;
+}
+.menu .far {
+  position: absolute;
+  right: 80px;
+  -webkit-text-fill-color: black;
+  opacity: 100%;
+}
+.menu .far:hover {
+  opacity: 0%;
+}
 
 .trait_vert {
   width: 40px;
@@ -444,6 +466,9 @@ button:hover {
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
+}
+.entree_1 .fa-circle-check {
+  color: white;
 }
 .entree_1 .prix {
   display: flex;
