@@ -88,11 +88,11 @@
 
 @keyframes menu_up {
     0% {
-        top: -37px;
+        top: 0px;
     }
 
     100% {
-        top: -47px;
+        top: -10px;
     }
 }
 
@@ -417,6 +417,7 @@ button {
 }
 
 .menu {
+    position: absolute;
     display: flex;
     flex-direction: column;
     padding: 10px 30px;
@@ -425,10 +426,6 @@ button {
     position: relative;
     top: -37px;
     align-items: center;
-    animation: menu_up 0.5s;
-    animation-delay: 3s;
-    animation-fill-mode: forwards;
-
 
     h1 {
         width: 100%;
@@ -481,21 +478,29 @@ button {
 
 
 .entree {
+    opacity: 0;
     @include display_sous_menu;
-    animation: defilement 3s;
+    animation: defilement 2s 500ms, menu_up 0.5 1s 1.5s;
+    top: 0px;
+    position: relative;
+    animation-fill-mode: forwards;
 }
 
 .plats {
     opacity: 0;
     @include display_sous_menu;
-    animation: defilement 3s 1000ms;
+    animation: defilement 3s 1800ms, menu_up 0.5 1s 3.5s;
+    top: 0px;
+    position: relative;
     animation-fill-mode: forwards;
 }
 
 .desserts {
     opacity: 0;
     @include display_sous_menu;
-    animation: defilement 3s 2000ms;
+    animation: defilement 3s 3700ms, menu_up 0.5 1s 5s;
+    top: 0px;
+    position: relative;
     animation-fill-mode: forwards;
 
 }
