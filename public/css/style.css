@@ -361,7 +361,6 @@ button:hover {
 }
 
 .menu {
-  position: absolute;
   display: flex;
   flex-direction: column;
   padding: 10px 30px;
