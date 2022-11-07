@@ -329,7 +329,12 @@ header {
             font-size: 22px;
         }
 
+
     }
+}
+
+.cardr figure:hover {
+    border: solid 2px $couleur-primaire;
 }
 
 footer {

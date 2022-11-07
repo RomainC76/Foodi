@@ -286,6 +286,10 @@ header {
   font-size: 22px;
 }
 
+.cardr figure:hover {
+  border: solid 2px #9356DC;
+}
+
 footer {
   background-color: #353535;
   display: flex;
